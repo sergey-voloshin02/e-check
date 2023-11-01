@@ -2,10 +2,9 @@ package main
 
 import (
     "net/http"
-    "github.com/e-check/internal/app"
-)
-
-   
+    "github.com/sergey-voloshin02/e-check/internal/app"
+) 
+ 
 func main() {
    r := app.SetupRouter()
  
