@@ -2,11 +2,11 @@ package main
 
 import (
     "net/http"
-    "github.com/sergey-voloshin02/e-check/internal/app"
-) 
- 
-func main() {
-   r := app.SetupRouter()
+    "e-check/routes/app"
+)    
+
+func main() { 
+   r := routes.SetupRouter()
  
     http.ListenAndServe(":8081", r)
 }  
